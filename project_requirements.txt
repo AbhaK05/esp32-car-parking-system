@@ -1,0 +1,28 @@
+# ============================
+# 🛠 Hardware Requirements
+# ============================
+
+ESP32 Dev Board          # Microcontroller board
+SG90 Servo Motor         # 1x for controlling toll gate
+IR Sensors               # 2x for toll and parking detection
+I2C LCD 16x2 Display     # With backpack (uses I2C protocol)
+Buzzer                   # For alert notifications
+Jumper Wires             # For connections
+Breadboard (optional)    # For prototyping circuit
+
+# ============================
+# 💻 Software Requirements
+# ============================
+
+MicroPython Firmware     # Flash latest stable version on ESP32
+
+# MicroPython Built-in Modules
+machine                  # Used for Pin, PWM, etc.
+time                     # For delays and timing
+
+# Custom / External Modules
+i2c_lcd.py               from [dhylands/python_lcd](https://github.com/dhylands/python_lcd) #For interfacing with an I2C 16x2 LCD using MicroPython.
+#This file is included in the repository as-is for convenience. Full credit to the original author.
+
+# Tools (Recommended for Upload)
+Thonny / uPyCraft / ampy # For uploading code to ESP32
